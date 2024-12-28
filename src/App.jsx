@@ -38,7 +38,7 @@ function App() {
       </section>
 
       {/* Section 3: Services */}
-      <section id="services" className=" flex flex-col items-center justify-center bg-primary">
+      <section id="project" className=" flex flex-col items-center justify-center bg-primary">
         <Projects/>
       </section>
 

@@ -35,11 +35,11 @@ const Navbar = () => {
         </div>
 
         {/* Menu Items */}
-        <ul className={`flex space-x-10 absolute inset-x-0 bottom-10 justify-center text-dark text-lg font-semibold
+        <ul className={`flex space-x-10 absolute inset-x-0 bottom-20 sm:bottom-10 justify-center text-dark text-lg font-semibold
           ${isScrolled ? 'hidden' : 'block'}`}>
           <li><a href="#home" onClick={()=>{setIsScrolled(true)}} >Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#project">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>

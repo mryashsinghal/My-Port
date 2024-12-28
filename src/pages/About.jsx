@@ -17,14 +17,11 @@ const About = () => {
 
       
       <div className="text-center text-white z-10 absolute top-10">
-        <h2 className="text-6xl font-extrabold mb-28 mt-8 text-dark ">About Me</h2>
-        <h1 className="text-3xl mb-4 z-1 p-9 ">
-          Hello! I am a passionate<span className=' ml-2 animated-text'>web developer</span>  with a knack for creating interactive and user-friendly web applications. 
-          My journey in coding has been exciting, and I constantly strive to improve my skills.
+        <h2 className="text-4xl sm:text-6xl font-extrabold sm:mb-28 mt-8 text-dark ">About Me</h2>
+        <h1 className=" sm:mb-4 z-1  leading-10 text-xl sm:text-2xl p-9">
+        I’m<span className=' ml-2 animated-text'>Yash Singhal</span>, a passionate Full-stack developer and competitive programmer pursuing a Bachelor's in Computer Science at Ajay Kumar Garg Engineering College (Graduating 2026). With a knack for building user-friendly and scalable web applications, I thrive on solving complex problems and crafting innovative. <span className='hidden sm:block'> My expertise spans MERN stack development, real-time applications, and hackathon projects that showcase my creativity and technical skills. I’m always eager to learn, collaborate, and push the boundaries of what technology can achieve.</span>
         </h1>
-        <p className="text-2xl  font-semibold mt-8 ">
-          I enjoy collaborating with others to bring ideas to life, and I'm always eager to learn new technologies.
-        </p>
+       
       </div>
     </div>
   );

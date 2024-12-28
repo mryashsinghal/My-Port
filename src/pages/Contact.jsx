@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+emailjs.init('kRh0lLQF00v7liyDq');
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -16,10 +17,9 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs.sendForm(
-      'your_service_id', 
-      'your_template_id', 
-      e.target, 
-      'your_user_id'
+      'service_6dsugw1', 
+      'template_055lrn9', 
+       e.target, 
     )
       .then((result) => {
         alert("Message Sent Successfully!");
@@ -37,7 +37,7 @@ const Contact = () => {
         <div className="absolute -bottom-16 -left-16 h-40 w-40 bg-black rounded-full animate-blob animation-delay-2000"></div>
         <div className="absolute -top-32 -right-32 h-64 w-64 bg-black rounded-full animate-blob animation-delay-4000"></div>
 
-        <h2 className="text-4xl font-bold text-center text-dark mb-8 animate-fadeIn">Contact Us</h2>
+        <h2 className="text-4xl font-bold text-center text-dark mb-8 animate-fadeIn z-30">Contact Me</h2>
 
         <form onSubmit={sendEmail} className="space-y-6">
           {/* Name Input */}
@@ -45,7 +45,7 @@ const Contact = () => {
             <input 
               type="text" 
               name="name" 
-              className="peer placeholder-transparent h-10 w-full border-b-2 border-[#647376] focus:outline-none focus:border-yellow-700 bg-transparent text-white" 
+              className="peer placeholder-transparent h-10 w-full border-b-2 border-[#647376] focus:outline-none focus:border-black bg-transparent text-white" 
               placeholder="Name" 
               onChange={handleChange} 
               required 
@@ -62,14 +62,14 @@ const Contact = () => {
             <input 
               type="email" 
               name="email" 
-              className="peer placeholder-transparent h-10 w-full border-b-2 border-[#647376] focus:outline-none focus:border-yellow-700 bg-transparent text-white" 
+              className="peer placeholder-transparent h-10 w-full border-b-2 border-[#647376] focus:outline-none focus:border-black bg-transparent text-white" 
               placeholder="Email" 
               onChange={handleChange} 
               required 
             />
             <label 
               htmlFor="email" 
-              className="absolute left-0 -top-3.5 text-[#647376] text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-yellow-500">
+              className="absolute left-0 -top-3.5 text-[#647376] text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-black">
               Email
             </label>
           </div>
@@ -78,7 +78,7 @@ const Contact = () => {
           <div className="relative">
             <textarea 
               name="message" 
-              className="peer placeholder-transparent h-32 w-full border-b-2 border-[#647376v] focus:outline-none focus:border-yellow-700 bg-transparent text-white" 
+              className="peer placeholder-transparent h-32 w-full border-b-2 border-[#647376v] focus:outline-none focus:border-black bg-transparent text-white" 
               placeholder="Message" 
               onChange={handleChange} 
               required 
@@ -93,7 +93,7 @@ const Contact = () => {
           {/* Submit Button */}
           <button 
             type="submit" 
-            className="w-full py-2 bg-dark hover:bg-yellow-700 transition-colors text-white font-bold rounded-lg animate-bounceIn">
+            className="w-full py-2 bg-dark hover:bg-black transition-colors text-white font-bold rounded-lg animate-bounceIn">
             Send Message
           </button>
         </form>
